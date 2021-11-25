@@ -1,0 +1,134 @@
+# Kodi Media Center language file
+# Addon Name: Sub Merge
+# Addon id: script.sub.merge
+# Addon Provider: MattRangel
+msgid ""
+msgstr ""
+
+msgctxt "#32001"
+msgid "Timing Options"
+msgstr "Timing Options"
+
+msgctxt "#32002"
+msgid "Text Options"
+msgstr "Text Options"
+
+msgctxt "#32003"
+msgid "Auto Shift"
+msgstr "Auto Shift"
+
+msgctxt "#32004"
+msgid "Font Size (px)"
+msgstr "Font Size (px)"
+
+msgctxt "#32005"
+msgid "File Options"
+msgstr "File Options"
+
+msgctxt "#32006"
+msgid "Permanently Save Merged File"
+msgstr "Permanently Save Merged File"
+
+msgctxt "#32007"
+msgid "Automatically apply to current video"
+msgstr "Automatically apply to current video"
+
+msgctxt "#32008"
+msgid "Time difference threshold (100 = 1 sec)"
+msgstr "Time difference threshold (100 = 1 sec)"
+
+msgctxt "#32009"
+msgid "Manually Shift Both"
+msgstr "Manually Shift Both"
+
+msgctxt "#32010"
+msgid "Shift amount (100 = 1 sec)"
+msgstr "Shift amount (100 = 1 sec)"
+
+msgctxt "#32011"
+msgid "Manually Shift Sub-Master"
+msgstr "Manually Shift Sub-Master"
+
+msgctxt "#32012"
+msgid "Save to"
+msgstr "Save to"
+
+msgctxt "#32013"
+msgid "Master Color (RRGGBB)"
+msgstr "Master Color (RRGGBB)"
+
+msgctxt "#32014"
+msgid "Sub-Master Color (RRGGBB)"
+msgstr "Sub-Master Color (RRGGBB)"
+
+msgctxt "#32015"
+msgid "Outline/Background Options"
+msgstr "Outline/Background Options"
+
+msgctxt "#32017"
+msgid "Opacity (%)"
+msgstr "Opacity (%)"
+
+msgctxt "#32020"
+msgid "Shadow Opacity (%)"
+msgstr "Shadow Opacity (%)"
+
+msgctxt "#32021"
+msgid "Base Color Options"
+msgstr "Base Color Options"
+
+msgctxt "#32022"
+msgid "Shadow Options"
+msgstr "Shadow Options"
+
+msgctxt "#32023"
+msgid "Master Location"
+msgstr "Master Location"
+
+msgctxt "#32024"
+msgid "Top"
+msgstr "Top"
+
+msgctxt "#32025"
+msgid "Bottom"
+msgstr "Bottom"
+
+msgctxt "#32026"
+msgid "Sub-Master Location"
+msgstr "Sub-Master Location"
+
+msgctxt "#32027"
+msgid "Outline Style"
+msgstr "Outline Style"
+
+msgctxt "#32028"
+msgid "Outline and shadow"
+msgstr "Outline and shadow"
+
+msgctxt "#32029"
+msgid "Solid box"
+msgstr "Solid box"
+
+msgctxt "#32030"
+msgid "Width"
+msgstr "Width"
+
+msgctxt "#32031"
+msgid "Text Positioning and Styling"
+msgstr "Text Positioning and Styling"
+
+msgctxt "#32032"
+msgid "Warn File Overwrite"
+msgstr "Warn File Overwrite"
+
+msgctxt "#32033"
+msgid "Preview files and edit settings before merge"
+msgstr "Preview files edit settings before merge"
+
+msgctxt "#32034"
+msgid "Look for sub files in"
+msgstr "Look for sub files in"
+
+msgctxt "#32035"
+msgid "Open file search in temp folder"
+msgstr "Open file search in temp folder"

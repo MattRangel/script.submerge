@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<category label="32001">
+		<setting id="autoShft" label="32003" type="bool" default="true"/>
+		<setting id="autoShftAmt" label="32008" type="number" default="50" subsetting="true" enable="eq(-1,true)"/>
+		<setting id="manShftSub" label="32011" type="bool" default="false"/>
+		<setting id="manShftSubAmt" label="32010" type="number" default="0" subsetting="true" enable="eq(-1,true)"/>
+		<setting id="manShft" label="32009" type="bool" default="false"/>
+		<setting id="manShftAmt" label="32010" type="number" default="0" subsetting="true" enable="eq(-1,true)"/>
+	</category>
+	<category label="32002">
+		<setting label="32031" type="lsep"/>
+		<setting id="fntSize" label="32004" type="number" default="20"/>
+		<setting id="mastLoc" type="select" label="32023" lvalues="32024|32025" default="1"/>
+		<setting id="subMastLoc" type="select" label="32026" lvalues="32024|32025" default="0"/>
+		<setting id="bordStyl" type="select" label="32027" lvalues="32028|32029" default="0"/>
+		<setting label="32021" type="lsep"/>
+		<setting id="mastPrimeClr" label="32013" type="text" default="FFFFFF"/>
+		<setting id="subMastPrimeClr" label="32014" type="text" default="FFFFFF"/>
+		<setting label="32015" type="lsep"/>
+		<setting id="mastOutrClr" label="32013" type="text" default="000000"/>
+		<setting id="subMastOutrClr" label="32014" type="text" default="000000"/>
+		<setting id="outrOpcty" label="32017" type="slider" default="100" range="0,100"/>
+		<setting id="outWid" label="32030" type="slider" default="1" range="0,4"/>
+		<setting label="32022" type="lsep"/>
+		<setting id="mastShdwClr" label="32013" type="text" default="000020"/>
+		<setting id="subMastShdwClr" label="32014" type="text" default="000020"/>
+		<setting id="shdwOpcty" label="32017" type="slider" default="100" range="0,100"/>
+		<setting id="shdwSize" label="32030" type="slider" default="0" range="0,4"/>
+	</category>
+	<category label="32005">
+		<setting id="permSave" label="32006" type="bool" default="false"/>
+		<setting label="32012" type="folder" id="saveFolder" source="" option="writeable" subsetting="true" enable="eq(-1,true)"/>
+		<setting id="autoApply" label="32007" type="bool" default="true"/>
+		<setting id="warnOvrWrite" label="32032" type="bool" default="true"/>
+		<setting id="previewFiles" label="32033" type="bool" default="true"/>
+		<setting id="tmpSrch" label="32035" type="bool" default="true"/>
+		<setting label="32034" type="folder" id="subFldr" source="" option="writeable" subsetting="true" enable="eq(-1,false)"/>
+	</category>
+</settings>
