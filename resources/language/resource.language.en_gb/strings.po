@@ -122,8 +122,8 @@ msgid "Warn File Overwrite"
 msgstr "Warn File Overwrite"
 
 msgctxt "#32033"
-msgid "Preview files and edit settings before merge"
-msgstr "Preview files edit settings before merge"
+msgid "Preview files and edit settings before each merge"
+msgstr "Preview files edit settings before each merge"
 
 msgctxt "#32034"
 msgid "Look for sub files in"

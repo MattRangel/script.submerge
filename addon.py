@@ -2,6 +2,7 @@ import xbmcaddon
 import xbmcgui
 import xbmcvfs
 import chardet
+import re
 
 addon = xbmcaddon.Addon()
 addonname = addon.getAddonInfo('name')
@@ -101,6 +102,11 @@ def fileToArray(subFile, level):
 			strPart += 1
 	for i in range(len(splitArray)):
 		splitArray[i][2] = splitArray[i][2].rstrip().replace("\n","\\n")
+		if len(re.findall("<.>",splitArray[i][2])) > 0:
+			splitArray[i][2] = splitArray[i][2].replace("<i>","{\\i1}")
+			splitArray[i][2] = splitArray[i][2].replace("<b>","{\\b1}")
+			splitArray[i][2] = splitArray[i][2].replace("<u>","{\\u1}")
+		splitArray[i][2] = re.sub("<.*?>","",splitArray[i][2])
 	shift = 0
 	if userSettings["manShft"]:
 		shift += userSettings["manShftAmt"]
