@@ -72,6 +72,7 @@ def colorConv(colorStr, opcty=100):
 	return col
 
 def srtPreview(sub,title):
+	sub = sub.encode(encoding="UTF-8")
 	f = open(sub, "rb").read()
 	detected = (chardet.detect(f)["encoding"])
 	f = f.decode(detected)
@@ -79,27 +80,26 @@ def srtPreview(sub,title):
 	del(f)
 
 def fileToArray(subFile, level):
+	subFile = subFile.encode(encoding="UTF-8")
 	f = open(subFile, "rb").read()
 	detected = (chardet.detect(f)["encoding"])
 	f = open(subFile, "r", encoding=detected)
 	lines = f.readlines()
 	del(f)
-	indx = 0
-	strPart = 0
+	indx = -1
+	strPart = False
 	splitArray = []
 	
 	for line in lines:
-		if line == "\n":
+		if "-->" in line:
 			indx += 1
-			strPart = 0
-		else:
-			if strPart != 0:
-				if strPart == 1:
-					timeSplit = line.replace(",",".").split(" --> ")
-					splitArray.append([timeSplit[0][1:-1], timeSplit[1].replace("\n","")[1:-1], ""])
-				else:
-					splitArray[indx][2] += line
-			strPart += 1
+			timeSplit = line.replace(",",".").split(" --> ")
+			splitArray.append([timeSplit[0][1:-1], timeSplit[1].replace("\n","")[1:-1], ""])
+			strPart = True
+		elif line == "\n":
+			strPart = False
+		elif strPart:
+			splitArray[indx][2] += line
 	for i in range(len(splitArray)):
 		splitArray[i][2] = splitArray[i][2].rstrip().replace("\n","\\n")
 		if len(re.findall("<.>",splitArray[i][2])) > 0:
