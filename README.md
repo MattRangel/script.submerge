@@ -8,8 +8,8 @@ Note: The two subtitle files are referred to as "Master" and "Sub-Master". Maste
 ## Timing Options
 - **Auto Shift**: Will align text lines from Master and Sub-Master which have equal beginnings and endings within an amount of time determined by the **time difference threshold** setting. This setting only shifts the timing of the Sub-Master file and uses the Master file as the base to compare. (*on/off*)
 - **Time difference threshold**: Sets the threshold for how far apart lines need to be before not being aligned by **Auto Shift**. (*Whole positive number, 100 = 1 Second*)
-- **Manually Shift Sub-Master**: Will shift the Sub-Master file by user determined amount of time. Applied before **Auto Shift** if both are enabled. (*on/off*) (*Whole positive number, 100 = 1 Second*)
-- **Manually Shift Both**: Will shift the both the Master and Sub-Master files by user determined amount of time. (*on/off*) (*Whole positive number, 100 = 1 Second*)
+- **Manually Shift Sub-Master**: Will shift the Sub-Master file by user determined amount of time. Applied before **Auto Shift** if both are enabled. (*on/off*) (*Whole number, 100 = 1 Second*)
+- **Manually Shift Both**: Will shift the both the Master and Sub-Master files by user determined amount of time. (*on/off*) (*Whole number, 100 = 1 Second*)
 ## Text Options
 Note: Colors are all in hexadecimal (RRGGBB)
 #### Text Positioning and Styling
