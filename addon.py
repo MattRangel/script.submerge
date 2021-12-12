@@ -72,20 +72,25 @@ def colorConv(colorStr, opcty=100):
 	return col
 
 def srtPreview(sub,title):
-	sub = sub.encode(encoding="UTF-8")
-	f = open(sub, "rb").read()
-	detected = (chardet.detect(f)["encoding"])
-	f = f.decode(detected)
-	xbmcgui.Dialog().textviewer(title, f)
-	del(f)
+	if (sub[-4:] == ".srt"):
+		sub = sub.encode(encoding="UTF-8")
+		f = open(sub, "rb").read()
+		detected = (chardet.detect(f)["encoding"])
+		f = f.decode(detected)
+		xbmcgui.Dialog().textviewer(title, f)
+		del(f)
 
 def fileToArray(subFile, level):
-	subFile = subFile.encode(encoding="UTF-8")
-	f = open(subFile, "rb").read()
-	detected = (chardet.detect(f)["encoding"])
-	f = open(subFile, "r", encoding=detected)
-	lines = f.readlines()
-	del(f)
+	if (subFile[-4:] == ".srt"):
+		subFile = subFile.encode(encoding="UTF-8")
+		f = open(subFile, "rb").read()
+		detected = (chardet.detect(f)["encoding"])
+		f = open(subFile, "r", encoding=detected)
+		lines = f.readlines()
+		del(f)
+	else:
+		return []
+	
 	indx = -1
 	strPart = False
 	splitArray = []
