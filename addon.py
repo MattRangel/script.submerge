@@ -19,6 +19,7 @@ def settingsUpdate():
 		"manShftSub" : addon.getSetting("manShftSub"), #Manual shift sub master (True, False)
 		"manShftSubAmt" : int(addon.getSetting("manShftSubAmt")), #Manual shift sub amount 100=1 sec (Number)
 		"fntSize" : addon.getSetting("fntSize"), #Font size in px (Number)
+		"forceLineBreak" : addon.getSetting("forceLineBreak"), #Forces same line breaks as SRT file if true (True / False)
 		"mastPrimeClr" : addon.getSetting("mastPrimeClr"), #Font color (Hex Color String RRGGBB)
 		"subMastPrimeClr" : addon.getSetting("subMastPrimeClr"), #Font color (Hex Color String RRGGBB)
 		"mastOutrClr" : addon.getSetting("mastOutrClr"), #Outline/Background color (Hex Color String RRGGBB)
@@ -94,6 +95,10 @@ def fileToArray(subFile, level):
 	indx = -1
 	strPart = False
 	splitArray = []
+	if userSettings["forceLineBreak"] == 'true':
+		lineBreak = "\\N"
+	else:
+		lineBreak = "\\n"
 	
 	for line in lines:
 		if "-->" in line:
@@ -106,7 +111,7 @@ def fileToArray(subFile, level):
 		elif strPart:
 			splitArray[indx][2] += line
 	for i in range(len(splitArray)):
-		splitArray[i][2] = splitArray[i][2].rstrip().replace("\n","\\n")
+		splitArray[i][2] = splitArray[i][2].rstrip().replace("\n", lineBreak)
 		if len(re.findall("<.>",splitArray[i][2])) > 0:
 			splitArray[i][2] = splitArray[i][2].replace("<i>","{\\i1}")
 			splitArray[i][2] = splitArray[i][2].replace("<b>","{\\b1}")
@@ -170,6 +175,7 @@ def arraysToASS(mastArray,subMastArray):
 			f.write("Dialogue: 0," + mastArray[i][0] + "," + mastArray[i][1]  + ",Default,,0,0,0,," + mastArray[i][2]  + "\n")
 		for i in range(subMastLen):
 			f.write(("Dialogue: 0," + subMastArray[i][0] + "," + subMastArray[i][1] + ",Secondary,,0,0,0,," + subMastArray[i][2] + "\n"))
+		f.close()
 	return fileSpot
 
 def autoApply(file):
@@ -193,12 +199,14 @@ def run():
 		srtPreview(smf, "Preview Sub-Master File")
 		xbmc.executebuiltin("Addon.OpenSettings(script.submerge)", True)
 		settingsUpdate()
-	z = alignSubs(fileToArray(mf,"master"),fileToArray(smf,"submaster"))
+	if userSettings["autoShft"] == "true":
+		z = alignSubs(fileToArray(mf,"master"),fileToArray(smf,"submaster"))
+	else:
+		z = [fileToArray(mf,"master"),fileToArray(smf,"submaster")]
 	fileSpot = arraysToASS(z[0],z[1])
+	del(z)
 	if userSettings["autoApply"] == "true":
 		autoApply(fileSpot)
 
 run()
 
-
-#xbmcgui.Dialog().ok(addonname, "Hello")

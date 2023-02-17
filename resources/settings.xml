@@ -14,6 +14,7 @@
 		<setting id="mastLoc" type="select" label="32023" lvalues="32024|32025" default="1"/>
 		<setting id="subMastLoc" type="select" label="32026" lvalues="32024|32025" default="0"/>
 		<setting id="bordStyl" type="select" label="32027" lvalues="32028|32029" default="0"/>
+    <setting id="forceLineBreak" label="32036" type="bool" default="true"/>
 		<setting label="32021" type="lsep"/>
 		<setting id="mastPrimeClr" label="32013" type="text" default="FFFFFF"/>
 		<setting id="subMastPrimeClr" label="32014" type="text" default="FFFFFF"/>

@@ -132,3 +132,7 @@ msgstr "Look for sub files in"
 msgctxt "#32035"
 msgid "Open file search in temp folder"
 msgstr "Open file search in temp folder"
+
+msgctxt "#32036"
+msgid "Force line breaks"
+msgstr "Force line breaks"

@@ -17,6 +17,7 @@ Note: Colors are all in hexadecimal (RRGGBB)
 - **Master Location**: Location of the Master text. (*Top/Bottom*)
 - **Sub-Master Location**: Location of the Sub-Master text. (*Top/Bottom*)
 - **Outline Style**: What type of background the text will have. Note: Shadow, outline, and background can all be turned off by setting their width to 0. (*Outline and shadow/Solid box*)
+- **Force line breaks**: Will force match the same line breaks found in the SRT files. (*on/off*)
 #### Base Color Options
 - **Master Color**: Inner/base color of Master text. (*Color*)
 - **Sub-Master Color**: Inner/base color of Sub-Master text. (*Color*)

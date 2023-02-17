@@ -2,3 +2,5 @@
 1.0.1 Fixed text formatting so now bold, italic, and underline styling convert properly.
 1.0.2 Fixed bug that occurred with files names and another bug with empty text lines.
 1.0.3 Both subtitle files are now optional, but the program will still format text if only one file is given.
+1.0.4 Fixed bug where the Auto Shift toggle setting was being ignored.
+1.1.4 Added setting option to match line breaks from SRT file.
