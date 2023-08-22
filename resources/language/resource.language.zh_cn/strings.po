@@ -1,0 +1,138 @@
+# Kodi Media Center language file
+# Addon Name: Sub Merge
+# Addon id: script.sub.merge
+# Addon Provider: MattRangel
+msgid ""
+msgstr ""
+
+msgctxt "#32001"
+msgid "Timing Options"
+msgstr "计时选项"
+
+msgctxt "#32002"
+msgid "Text Options"
+msgstr "文本选项"
+
+msgctxt "#32003"
+msgid "Auto Shift"
+msgstr "自动切换"
+
+msgctxt "#32004"
+msgid "Font Size (px)"
+msgstr "字体大小 (px)"
+
+msgctxt "#32005"
+msgid "File Options"
+msgstr "文件选项"
+
+msgctxt "#32006"
+msgid "Permanently Save Merged File"
+msgstr "用球保存合并文件"
+
+msgctxt "#32007"
+msgid "Automatically apply to current video"
+msgstr "自动应用于当前视频"
+
+msgctxt "#32008"
+msgid "Time difference threshold (100 = 1 sec)"
+msgstr "时间差阈值 (100 = 1 秒)"
+
+msgctxt "#32009"
+msgid "Manually Shift Both"
+msgstr "手动切换两者"
+
+msgctxt "#32010"
+msgid "Shift amount (100 = 1 sec)"
+msgstr "偏移量 (100 = 1 秒)"
+
+msgctxt "#32011"
+msgid "Manually Shift Sub-Master"
+msgstr "手动切换子主控"
+
+msgctxt "#32012"
+msgid "Save to"
+msgstr "另存为"
+
+msgctxt "#32013"
+msgid "Master Color (RRGGBB)"
+msgstr "主色 (RRGGBB)"
+
+msgctxt "#32014"
+msgid "Sub-Master Color (RRGGBB)"
+msgstr "副色 (RRGGBB)"
+
+msgctxt "#32015"
+msgid "Outline/Background Options"
+msgstr "轮廓、背景选项"
+
+msgctxt "#32017"
+msgid "Opacity (%)"
+msgstr "不透明度 (%)"
+
+msgctxt "#32020"
+msgid "Shadow Opacity (%)"
+msgstr "阴影不透明度 (%)"
+
+msgctxt "#32021"
+msgid "Base Color Options"
+msgstr "背景颜色选项"
+
+msgctxt "#32022"
+msgid "Shadow Options"
+msgstr "阴影选项"
+
+msgctxt "#32023"
+msgid "Master Location"
+msgstr "主位置"
+
+msgctxt "#32024"
+msgid "Top"
+msgstr "顶部"
+
+msgctxt "#32025"
+msgid "Bottom"
+msgstr "底部"
+
+msgctxt "#32026"
+msgid "Sub-Master Location"
+msgstr "副位置"
+
+msgctxt "#32027"
+msgid "Outline Style"
+msgstr "轮廓样式"
+
+msgctxt "#32028"
+msgid "Outline and shadow"
+msgstr "轮廓和阴影"
+
+msgctxt "#32029"
+msgid "Solid box"
+msgstr "实心"
+
+msgctxt "#32030"
+msgid "Width"
+msgstr "宽度"
+
+msgctxt "#32031"
+msgid "Text Positioning and Styling"
+msgstr "文本定位和样式"
+
+msgctxt "#32032"
+msgid "Warn File Overwrite"
+msgstr "警告文件覆盖"
+
+msgctxt "#32033"
+msgid "Preview files and edit settings before each merge"
+msgstr "每次合并前预览文件编辑设置"
+
+msgctxt "#32034"
+msgid "Look for sub files in"
+msgstr "在以下位置查找子文件"
+
+msgctxt "#32035"
+msgid "Open file search in temp folder"
+msgstr "在临时文件夹中打开文件搜索"
+
+msgctxt "#32036"
+msgid "Force line breaks"
+msgstr "强制换行"
