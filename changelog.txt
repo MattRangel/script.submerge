@@ -4,3 +4,4 @@
 1.0.3 Both subtitle files are now optional, but the program will still format text if only one file is given.
 1.0.4 Fixed bug where the Auto Shift toggle setting was being ignored.
 1.1.4 Added setting option to match line breaks from SRT file.
+1.1.5 New language supported: Simplifed Chinese.
