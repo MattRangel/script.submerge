@@ -2,7 +2,7 @@
 Kodi script to merge two subtitle SRT files of different languages into one file.
 
 # Description of settings
-The setting names are all pretty straight forward, but I've written descriptions off everything if anything happens to be confusing.
+The setting names are all pretty straight forward, but I've written descriptions of everything if anything happens to be confusing.
 
 Note: The two subtitle files are referred to as "Master" and "Sub-Master". Master being the first file you choose, and Sub-Master being the second.
 ## Timing Options
